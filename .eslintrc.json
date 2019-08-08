@@ -30,6 +30,18 @@
       {
         "extensions": [".js", "jsx"]
       }
+    ],
+    // Allow import packages from Dev Dependencies in Tests files
+    "import/no-extraneous-dependencies": [
+      "error",
+      {
+        "devDependencies": [
+          "**/*.test.js",
+          "**/*.spec.js",
+          "**/setupTests.js",
+          "**/utils/tests/*.js"
+        ]
+      }
     ]
   },
   "settings": {
