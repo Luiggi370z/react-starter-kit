@@ -1,0 +1,25 @@
+{
+  "workbench.colorCustomizations": {
+    "titleBar.activeBackground": "#00b3e6",
+    "titleBar.inactiveBackground": "#00b3e699",
+    "titleBar.activeForeground": "#15202b",
+    "titleBar.inactiveForeground": "#15202b99",
+    "statusBar.background": "#00b3e6",
+    "statusBarItem.hoverBackground": "#008bb3",
+    "statusBar.foreground": "#15202b"
+  },
+  "peacock.color": "#00b3e6",
+  "editor.formatOnSave": true,
+  "editor.formatOnPaste": true,
+  "eslint.autoFixOnSave": true,
+  "eslint.validate": [
+    {
+      "language": "javascript",
+      "autoFix": true
+    },
+    {
+      "language": "javascriptreact",
+      "autoFix": true
+    }
+  ]
+}
