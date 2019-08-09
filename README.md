@@ -14,7 +14,7 @@ Basic starter kit to create an App using create-react-app and most of the best p
 
 ## Getting Started
 
-For a long time I researched a good starter point to learn or to start a project with VueJS and basic plugins, best practices, conventions, file structure, and more, I found different pieces of what I was looking for so I decided to put them all together.
+For a long time I researched a good starter point to learn or to start a project with ReactJS and basic plugins, best practices, conventions, file structure, and more, I found different pieces of what I was looking for so I decided to put them all together.
 
 So basically, what you have here is a reactjs starter project created with `create-react-app` and essential configurations to start a clean and fast ReactJS App:
 
@@ -102,7 +102,7 @@ Lints all the files inside `./src` and shows the result without fixing.
 
 ## File Structure
 
-Folder structure is based on VUE CLI 3.x and some personal preferences:
+Folder structure is based on productivity and some personal preferences:
 
 ```text
 src

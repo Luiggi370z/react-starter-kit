@@ -4,7 +4,7 @@ import toJson from 'enzyme-to-json'
 import { findByTestAttr, checkProps } from 'utils/tests'
 import TheTopBar from '.'
 
-const setUp = props => shallow(<TheTopBar {...props} />)
+const createWrapper = props => shallow(<TheTopBar {...props} />)
 
 describe('TodoAdd Component', () => {
   describe('Check PropTypes', () => {
@@ -27,11 +27,11 @@ describe('TodoAdd Component', () => {
     const props = {
       toggleView: doSomething
     }
-    wrapper = setUp(props)
+    wrapper = createWrapper(props)
   })
 
   describe('Rendering', () => {
-    // it('should render without errors', () => {
+    // it('outputs correct tree', () => {
     //   expect(toJson(wrapper)).toMatchSnapshot()
     // })
 
@@ -44,12 +44,12 @@ describe('TodoAdd Component', () => {
           .children()
           .first()
           .text()
-      ).toBe('Add Task')
+      ).toBe('Do Something')
     })
   })
 
   describe('Interactions', () => {
-    it('should emit toggle view on click event', () => {
+    it('should emit do something on click event', () => {
       const button = findByTestAttr(wrapper, 'button')
       button.simulate('click')
 
