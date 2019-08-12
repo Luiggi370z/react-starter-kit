@@ -7,7 +7,7 @@ const TheTopBar = props => {
   return (
     <div>
       <div>{title}</div>
-      <button onClick={doSomething} type="button">
+      <button onClick={doSomething} type="button" data-test="test-button">
         Do Something
       </button>
     </div>

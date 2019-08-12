@@ -1,12 +1,11 @@
 import React from 'react'
 import { shallow } from 'enzyme'
-import toJson from 'enzyme-to-json'
 import { findByTestAttr, checkProps } from 'utils/tests'
 import TheTopBar from '.'
 
 const createWrapper = props => shallow(<TheTopBar {...props} />)
 
-describe('TodoAdd Component', () => {
+describe('TheTopBar Component', () => {
   describe('Check PropTypes', () => {
     it('should not throw a warning', () => {
       const expectedProps = {
@@ -25,18 +24,19 @@ describe('TodoAdd Component', () => {
   beforeEach(() => {
     doSomething = jest.fn()
     const props = {
-      toggleView: doSomething
+      title: 'Test',
+      doSomething: doSomething
     }
     wrapper = createWrapper(props)
   })
 
   describe('Rendering', () => {
-    // it('outputs correct tree', () => {
-    //   expect(toJson(wrapper)).toMatchSnapshot()
-    // })
+    it('outputs correct tree', () => {
+      expect(wrapper).toMatchSnapshot()
+    })
 
-    it('should render Add Task button', () => {
-      const button = findByTestAttr(wrapper, 'button')
+    it('should render Do Something button', () => {
+      const button = findByTestAttr(wrapper, 'test-button')
 
       expect(button.length).toBe(1)
       expect(
@@ -50,7 +50,7 @@ describe('TodoAdd Component', () => {
 
   describe('Interactions', () => {
     it('should emit do something on click event', () => {
-      const button = findByTestAttr(wrapper, 'button')
+      const button = findByTestAttr(wrapper, 'test-button')
       button.simulate('click')
 
       expect(doSomething).toHaveBeenCalled()

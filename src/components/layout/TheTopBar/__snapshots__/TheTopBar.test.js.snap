@@ -1,0 +1,16 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`TheTopBar Component Rendering outputs correct tree 1`] = `
+<div>
+  <div>
+    Test
+  </div>
+  <button
+    data-test="test-button"
+    onClick={[MockFunction]}
+    type="button"
+  >
+    Do Something
+  </button>
+</div>
+`;
