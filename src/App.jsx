@@ -1,6 +1,9 @@
 import React from 'react'
 import logo from 'assets/logo.svg'
 import './App.css'
+import store from './store'
+
+const a = store
 
 function App() {
   return (
@@ -10,7 +13,7 @@ function App() {
         <h2>React Starter Kit</h2>
         <p>
           <span>Edit </span>
-          <code>src/App.js</code>
+          <code>src/App.js </code>
           <span>and save to reload.</span>
         </p>
         <a

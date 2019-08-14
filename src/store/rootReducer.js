@@ -1,6 +1,7 @@
 import { combineReducers } from 'redux'
-import { users } from './modules'
+import { bigModule, users } from './modules'
 
 export default combineReducers({
-  [users.NAME]: users.reducer
+  [users.actionTypes.NAME]: users.reducer,
+  [bigModule.actionTypes.NAME]: bigModule.reducer
 })
