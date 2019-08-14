@@ -12,13 +12,14 @@
     "react-router-dom": "^5.0.1",
     "react-scripts": "3.0.1",
     "redux": "^4.0.4",
-    "redux-devtools-extension": "^2.13.8"
+    "redux-devtools-extension": "^2.13.8",
+    "reselect": "^4.0.0"
   },
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test --verbose",
-    "test:no-details": "react-scripts test",
+    "coverage": "npm test -- --coverage",
     "eject": "react-scripts eject",
     "lint": "eslint src/"
   },
@@ -52,8 +53,14 @@
     "why-did-you-update": "^1.0.6"
   },
   "jest": {
+    "collectCoverageFrom": [
+      "src/**/*.{js,jsx,ts,tsx}"
+    ],
     "snapshotSerializers": [
       "enzyme-to-json/serializer"
+    ],
+    "watchPathIgnorePatterns": [
+      "<rootDir>/node_modules/"
     ]
   }
 }
