@@ -2,7 +2,7 @@
   ReactJs Starter Kit 👨🏼‍💻
 </h1>
 
-Basic starter kit to create an App using create-react-app and most of the best packges or tools for dates, fetching, tests, coverage, linting, formatting and more.
+> Basic starter kit to create an App using create-react-app and most of the best packges or tools for dates, fetching, tests, coverage, linting, formatting and more.
 
 ## 🔖 Table of Contents
 
@@ -125,13 +125,15 @@ src
 │   └── ...
 ├── index.jsx               * Entry point of the application.
 ├── services                * All the common services. e.g. Authentication, hubs, etc.
-├── router                  * All the routes of your projects.
-│   └── index.js
-├── store                   * The Redux action types in action-type.js, reducers, selectors and main store in the subfolders.
+├── store                   * The Redux action types in action-type.js, reducers, selectors and main store in the sub-folders.
 │   ├── index.js
 │   └── middlewares         * Store middlewares.
-│   └── moduleA
-│       └── action-types.js
+│   └── modules             * Store modules/ducks structure.
+│       └── smallModule.js  * Small modules can contain actions, action types, reducers and selectors in the same file.
+│       └── bigModule       * Big modules should be composed by separated files for actions, action types, reducer and selectors.
+│           └── index.js
+│           └── actions.js
+│           └── ...
 ├── styles                  * All common styles (Sass, css, styled-component).
 ├── utils                   * Functions (for tests, for regex value testing, constants or filters.)
 │   └── ...
