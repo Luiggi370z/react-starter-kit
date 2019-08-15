@@ -19,13 +19,15 @@ For a long time I researched a good starter point to learn or to start a project
 So basically, what you have here is a reactjs starter project created with `create-react-app` and essential configurations to start a clean and fast ReactJS App:
 
 - Routing (ReactJs Router).
-- Store Management (Redux).
+- Store Management (Redux / Modules).
 - Unit testing (jest/enzyme).
+- Coverage tests.
 - Lint and formatting (ESLint + Airbnb + Prettier).
 - Date-fns (datetime library - functional approach https://date-fns.org/).
-- Solid and recommended file structure (supports dumb and smart components).
-- Configuration files by environment.
+- Solid and recommended file structure (supports containers, dumb and smart components).
+- Configuration files.
 - Custom scripts.
+- Examples for CSS Modules, SaSS or Styled Components.
 
 So feel free to fork and enjoy it 😃.
 
@@ -57,6 +59,7 @@ My favorite IDE is VS Code so I included a list of basic plugins for ReactJS app
 - Path Intellisense
 - TODO Highlight
 - vscode-styled-components
+- Sass
 
 ## Available Scripts
 
@@ -180,7 +183,10 @@ Here are a few important conventions:
 
 I got inspired by:
 
-- https://medium.com/hackernoon/structuring-projects-and-naming-components-in-react-1261b6e18d76
-- https://blog.usejournal.com/how-i-structure-my-react-apps-86e897054593
-- https://blog.bitsrc.io/structuring-a-react-project-a-definitive-guide-ac9a754df5eb
-- https://reactjs.org/docs/faq-structure.html#is-there-a-recommended-way-to-structure-react-projects
+- [Structuring projects and naming components in react](https://medium.com/hackernoon/structuring-projects-and-naming-components-in-react-1261b6e18d76)
+- [How i structure my react apps](https://blog.usejournal.com/how-i-structure-my-react-apps-86e897054593)
+- [Structuring a react project a definitive guide](https://blog.bitsrc.io/structuring-a-react-project-a-definitive-guide-ac9a754df5eb)
+- [Is there a recommended way to structure react projects](https://reactjs.org/docs/faq-structure.html#is-there-a-recommended-way-to-structure-react-projects)
+- [Applying code organization rules to concrete redux code](https://jaysoo.ca/2016/02/28/applying-code-organization-rules-to-concrete-redux-code/)
+- [Testing react redux apps with jest and enzyme](https://medium.com/vena-engineering/testing-react-redux-apps-with-jest-and-enzyme-795232bd0fda)
+- [10 things not to do when building react applications](https://medium.com/better-programming/10-things-not-to-do-when-building-react-applications-bc26d4f38644)
