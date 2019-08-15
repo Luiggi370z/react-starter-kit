@@ -8,7 +8,7 @@ const About = ({ history }) => {
 
   return (
     <div>
-      <h1>About this app</h1>
+      <h3>About this app</h3>
       <p>Example app with react starter kit</p>
       <p>Version: 1.0.0</p>
       <button type="button" onClick={goBack}>
