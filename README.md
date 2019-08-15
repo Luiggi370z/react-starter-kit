@@ -1,8 +1,10 @@
-# ReactJs Starter Kit
+<h1 align="center">
+  ReactJs Starter Kit 👨🏼‍💻
+</h1>
 
 Basic starter kit to create an App using create-react-app and most of the best packges or tools for dates, fetching, tests, coverage, linting, formatting and more.
 
-## Table of Contents
+## 🔖 Table of Contents
 
 - [Getting Started](#getting-started)
 - [Prerequisites](#Prerequisites)
@@ -12,7 +14,7 @@ Basic starter kit to create an App using create-react-app and most of the best p
 - [Naming Conventions](#naming-conventions)
 - [Resources](#resources)
 
-## Getting Started
+## 🚀 Getting Started
 
 For a long time I researched a good starter point to learn or to start a project with ReactJS and basic plugins, best practices, conventions, file structure, and more, I found different pieces of what I was looking for so I decided to put them all together.
 
@@ -33,12 +35,12 @@ So feel free to fork and enjoy it 😃.
 
 Run `npm install` and then `npm start`.
 
-## Prerequisites
+## 🤔 Prerequisites
 
 NodeJS
 https://nodejs.org/en/
 
-## VS Code Plugins
+## 👨🏼‍💻 VS Code Plugins
 
 My favorite IDE is VS Code so I included a list of basic plugins for ReactJS apps (if you use a different IDE I'm pretty sure there should be the same plugins for your IDE):
 
@@ -61,7 +63,7 @@ My favorite IDE is VS Code so I included a list of basic plugins for ReactJS app
 - vscode-styled-components
 - Sass
 
-## Available Scripts
+## 🙌 Available Scripts
 
 In the project directory, you can run:
 
@@ -103,7 +105,7 @@ https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-f
 
 Lints all the files inside `./src` and shows the result without fixing.
 
-## File Structure
+## 😎 File Structure
 
 Folder structure is based on productivity and some personal preferences:
 
@@ -179,7 +181,7 @@ Here are a few important conventions:
 - `Keep pages simple`, with minimum structure and code.
 - Group pages accordingly to route definition. For a route /user/list we would have a page located at /src/pages/User/List.jsx.
 
-## Resources
+## 🗒 Resources
 
 I got inspired by:
 
