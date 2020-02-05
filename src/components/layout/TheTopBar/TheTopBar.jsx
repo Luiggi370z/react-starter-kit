@@ -1,3 +1,6 @@
+// TheTopBar should only be 1 by page/instance
+// Will lead/organize the layout of all the child components
+
 import React from 'react'
 import PropTypes from 'prop-types'
 

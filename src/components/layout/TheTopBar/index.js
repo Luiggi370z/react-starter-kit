@@ -1,1 +1,2 @@
-export { default } from './TheTopBar'
+// Barrel Model
+export { default as TheTopBar } from './TheTopBar'

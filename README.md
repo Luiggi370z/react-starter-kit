@@ -160,28 +160,92 @@ Here are a few important conventions:
 
 ### Naming
 
-- `Component names` should always be `multi-word`, except for root “App” components. Use “UserCard” or “ProfileCard” instead of “Card” for example.
+- **Component names** should always be **multi-word**, except for root `App` components. Use `UserCard` or `ProfileCard` instead of `Card` for example.
   Each component should be in its own file.
-- `Components files` should be always `PascalCase` except for HOC's. Use “UserCard.jsx".
-- `Components are named accordingly to it's relative path to components or src`. Given that, a component located at src/components/User/List.jsx would be named as UserList. A component located at src/screens/User/List would be named as ScreensUserList.
-- `Components that are in a folder with same name, don’t repeat the name in the component`. Considering that, a component located at src/components/User/List/List.jsx would be named as UserList and NOT as UserListList.
-- Components that are only `used once per page should begin with the prefix “The”`, to denote that there can be only one. For example for a navbar or a footer you should use “TheNavbar.jsx or “TheFooter.jsx.
-- `High Order Components` (HOC) file and folder name in `lowerCamelCase`.
-- `Always use full name` instead of abbreviation in the name of your components. For example don’t use “UDSettings”, use instead “UserDashboardSettings”.
-- `Each page is a react class component` having some state. A `page component` uses other components to assemble the page like lego blocks.
-- `Keep components shallow`. If a components has a lot of nested markup then the chances of reusing it decreases. Instead we should take advantage of composition. It saves us from prop drilling or having to reach out to context api.
-- `Presentational components` are those who `don’t have internal state`. Their role is to show certain pieces of UI/Layout. They are provided data via props or context api.
-- `Container components` are those which `deals with business logic`. They usually have some state and only render presentational components based on the logic.
-- This way Presentational and Container components complete the puzzle together. By `dividing the responsibilities`, code becomes easier to maintain and debug.
+
+  ```
+  Gives more meaning and context of what the component does.
+  ```
+
+- **Components files** should be always **PascalCase**/**kebab-case** except for HOC's. Use `UserCard.jsx` or `user-card.jsx`.
+
+  ```
+  PascalCase works best with autocompletion in code editors, as it’s consistent with how we reference
+  components in JS(X) and templates, wherever possible.
+
+  However, mixed case filenames can sometimes create issues on case-insensitive file systems, which
+  is why kebab-case is also perfectly acceptable.
+  ```
+
+- **Components are named accordingly to it's relative path to components or src**. Given that, a component located at `src/components/User/List.jsx` would be named as `UserList`. A component located at `src/screens/User/List` would be named as `ScreensUserList`.
+- **Components that are in a folder with same name, don’t repeat the name in the component**. Considering that, a component located at `src/components/User/List/List.jsx` would be named as `UserList` and **NOT** as `UserListList`.
+
+  ```
+  The name we give to the components, should be clear and unique in the application, in order to
+  make them being easier to find and to avoid possible confusions.
+
+  Easy search inside the project.
+  ```
+
+- Components that are only **used once per page should begin with the prefix “The”**, to denote that there can be only one. For example for a navbar or a footer you should use `TheNavbar.jsx` or `TheFooter.jsx`.
+
+  ```
+  This does not mean the component is only used in a single page,
+  but it will only be used once per page.
+
+  These components never accept any props, since they are specific to your app, not their context
+  within your app.
+
+  If you find the need to add props, it’s a good indication that this is actually a reusable
+  component that is only used once per page for now.
+  ```
+
+- **High Order Components** (HOC) file and folder name in **lowerCamelCase**.
+
+  ```
+  Generic convention
+  ```
+
+- **Always use full name** instead of abbreviation in the name of your components. For example don’t use `UDSettings`, use instead `UserDashboardSettings`.
+
+  ```
+  Keep things clear
+  ```
+
+- **Each page is a react class component** having some state. A **page component** uses other components to assemble the page like lego blocks.
+
+  ```
+  Single entry point by feature or page.
+
+  Keep the pages in a separated folder in the root of src, because they will be
+  grouped accordingly to the route definition and not by modules.
+  ```
+
+- **Keep components shallow**. If a components has a lot of nested markup then the chances of reusing it decreases. Instead we should take advantage of composition. It saves us from prop drilling or having to reach out to context api.
+
+  ```
+  Reusable and Readable code.
+
+  Passing down props to multiple child components is what they call a code smell.
+  ```
+
+- **Presentational components** are those who **don’t have internal state**. Their role is to show certain pieces of UI or Layout. They are provided data via props or context api or state management.
+- **Container components** are those which **deals with business logic**. They usually have some state and only render presentational components based on the logic.
+
+  ```
+  This way Presentational and Container components complete the puzzle together.
+
+  By dividing the responsibilities, code becomes easier to maintain and debug.
+  ```
 
 ### Organization / Best practices
 
-- Use a `central export file` (Barrel export -> index.js) in the components directory. With this file we can just import all of our components into it and export them. This will allow us to import components into any file from the same place.
-- `Presentational` and `Container components` are kept at `src/components`.
-- `Group components` by module/feature.
-- Keep `generic components` inside src/components/UI or src/components/layout.
-- `Keep pages simple`, with minimum structure and code.
-- Group pages accordingly to route definition. For a route /user/list we would have a page located at /src/pages/User/List.jsx.
+- Use a **central export file** (Barrel export -> `index.js`) in the components directory. With this file we can just import all of our components into it and export them. This will allow us to import components into any file from the same place.
+- **Presentational** and **Container components** are kept at `src/components`.
+- **Group components** by `module/feature` inside `components folder`.
+- Keep **generic components** by context inside `src/components/ui` or `src/components/layout`.
+- **Keep pages simple**, with minimum structure and code.
+- Group pages accordingly to route definition. For a route `/user/list` we would have a page located at `/src/pages/User/List.jsx`.
 
 ## 🗒 Resources
 
