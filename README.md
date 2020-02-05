@@ -158,6 +158,11 @@ src
 
 Here are a few important conventions:
 
+### JSX vs JS
+
+Since JSX is not standard JS so it should go into it's own extension ie. `.ts` for TypeScript, `.jsx` for JSX.
+Now days, most of the IDE's support both extensions for ReactJs, so more important reason today is that helps to indicate what it is: a component or plain js?.
+
 ### Naming
 
 - **Component names** should always be **multi-word**, except for root `App` components. Use `UserCard` or `ProfileCard` instead of `Card` for example.
