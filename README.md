@@ -128,16 +128,17 @@ src
 ├── store                   * The Redux action types in action-type.js, reducers, selectors and main store in the sub-folders.
 │   ├── index.js
 │   └── middlewares         * Store middlewares.
+│   └── sagas               * Saga files in case of redux-saga.
 │   └── modules             * Store modules/ducks structure.
 │       └── smallModule.js  * Small modules can contain actions, action types, reducers and selectors in the same file.
 │       └── bigModule       * Big modules should be composed by separated files for actions, action types, reducer and selectors.
 │           └── index.js
 │           └── actions.js
 │           └── ...
-├── styles                  * All common styles (Sass, css, styled-component).
+├── styles/theme            * All common styles (css) or theme (sass, styled-components).
 ├── utils                   * Functions (for tests, for regex value testing, constants or filters.)
 │   └── ...
-├── pages                   * Routed components that represents pages.
+├── pages                   * Routed components that represents pages(Presentational Components Only).
 │   └── ...
 └── .vscode                 * VS Code workspace settings to work with ESLint rules and formatting
                               (you can also lint or fix on save 😉).
